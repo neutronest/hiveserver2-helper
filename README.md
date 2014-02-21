@@ -14,7 +14,7 @@ Entry the HiveServer2 Now!!!
     from hiveserver2_helper import hiveserver2_helper
 
     helper = hiveserver2_helper()
-    helper.connect(config) ### the config si supported by youself.
+    helper.connect(config) ### the config is supported by youself.
 
     hql = "select * from XXX where ..." ### the hql you given
     records = helper.execute_hql(hql)
