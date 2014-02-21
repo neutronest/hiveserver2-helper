@@ -8,16 +8,16 @@ Entry the HiveServer2 Now!!!
 
 ### Example
 
-import sys
+    import sys
 
-sys.path.append("..")
-from hiveserver2_helper import hiveserver2_helper
+    sys.path.append("..")
+    from hiveserver2_helper import hiveserver2_helper
 
-helper = hiveserver2_helper()
-helper.connect(config) ### the config si supported by youself.
+    helper = hiveserver2_helper()
+    helper.connect(config) ### the config si supported by youself.
 
-hql = "select * from XXX where ..." ### the hql you given
-records = helper.execute_hql(hql)
-for record in records:
-    print record
+    hql = "select * from XXX where ..." ### the hql you given
+    records = helper.execute_hql(hql)
+    for record in records:
+        print record
 
